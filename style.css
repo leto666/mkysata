@@ -1,0 +1,152 @@
+@import url("anime.css");
+
+
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	outline: none;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+/*	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;*/
+	background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/652/confectionary.png) #03686D;
+	}
+
+
+.container {
+	margin: 0 auto;
+	max-width: 700px;
+	max-height: 100vh;
+	background-color: white;
+	font-family: sans-serif;
+	font-size: 80%;
+	color: red;
+
+}
+
+
+/* Useful Classes */
+.xy-center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.transition {
+	transition: all 350ms ease-in-out;
+}
+
+.r-3-2 {
+	width: 100%;
+	padding-bottom: 66.667%;
+	background-color: #ddd;
+}
+
+.image-holder {
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+/* Main Styles */
+.gallery-wrapper {
+	position: relative;
+	overflow: hidden;
+}
+
+.gallery {
+	position: relative;
+	white-space: nowrap;
+	font-size: 0;
+}
+
+.item-wrapper {
+	cursor: pointer;
+	width: 23%; /* arbitrary value */
+	display: inline-block;
+	background-color: white;
+}
+
+.gallery-item { opacity: 0.5; }
+.gallery-item.active { opacity: 1; }
+
+.controls {
+	font-size: 0;
+	border-top: none;
+}
+.move-btn {
+	display: inline-block;
+	width: 50%;
+	border: none;
+  	color:#002021;
+	background-color: #108388;
+	padding: 0.2em 1.5em;
+}
+.move-btn:first-child {border-right: none;}
+.move-btn.left  { cursor: w-resize; }
+.move-btn.right { cursor: e-resize; }
+
+header {
+font-size: 50px;
+text-align: center;
+color: red;
+font-family: Merienda;
+
+}
+p.orta {
+	font-size: 22px;
+	text-align: center;
+	margin: auto;
+ 	width: 35%;
+  	padding: 10px;
+}
+
+p.sol {
+	font-size: 22px;
+	text-align: left;
+	margin: auto;
+  	width: 35%;
+  	padding: 10px;
+
+}
+p.merkez {
+	text-align: left;
+}
+
+p.button {
+
+
+}
+.button {
+        background-color: pink;
+        color: white;
+        padding: 10px;
+        border-radius: 10px;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        margin:10px
+          width: 90px;
+        height: 40px;
+        text-align: center;
+    }
+    
+    .small-btn {
+        width: 50px;
+        height: 25px;
+    }
+    
+    .medium-btn {
+        width: 70px;
+        height: 30px;
+    }
+    
+    .big-btn {
+        width: 90px;
+        height: 40px;
+    }
